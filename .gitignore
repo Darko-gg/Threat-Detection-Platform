@@ -1,0 +1,24 @@
+# Python
+analyzer/.venv/
+analyzer/__pycache__/
+analyzer/*.pyc
+
+# Java
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+*.class
+
+# JavaScript
+dashboard/node_modules/
+dashboard/dist/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
