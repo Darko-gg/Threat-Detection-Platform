@@ -1,0 +1,10 @@
+[
+    {
+        "alert_type": "FAILED_LOGIN_THRESHOLD_EXCEEDED",
+        "severity": "high",
+        "message": "Detected 3 failed logins from IP 185.22.44.9",
+        "ip_address": "185.22.44.9",
+        "user": "bob",
+        "event_count": 3
+    }
+]

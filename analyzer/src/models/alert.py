@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 
 
 @dataclass
@@ -9,3 +9,6 @@ class Alert:
     ip_address: str | None
     user: str | None
     event_count: int
+
+    def to_dict(self) -> dict:
+        return asdict(self)

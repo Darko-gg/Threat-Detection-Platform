@@ -1,9 +1,11 @@
 from parsers.log_parser import parse_log_file
 from detectors.failed_login_detector import detect_failed_logins
+from services.alert_exporter import export_alerts_to_json
 
 
 def main():
     file_path = "sample_logs/auth.log"
+    output_path = "output/alerts.json"
 
     print("DarktraceSec Analyzer started.")
     print(f"Loading log file: {file_path}")
@@ -25,6 +27,9 @@ def main():
             print(f"  User: {alert.user}")
             print(f"  Event Count: {alert.event_count}")
             print()
+
+        export_alerts_to_json(alerts, output_path)
+        print(f"Alerts exported to {output_path}")
     else:
         print("No alerts detected.")
 
