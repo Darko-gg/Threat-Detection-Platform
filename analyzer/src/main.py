@@ -18,7 +18,13 @@ def main():
     if alerts:
         print("Alerts:")
         for alert in alerts:
-            print(f"- [{alert['severity'].upper()}] {alert['message']}")
+            print(f"- Type: {alert.alert_type}")
+            print(f"  Severity:: {alert.severity.upper()}")
+            print(f"  Message: {alert.message}")
+            print(f"  IP Address: {alert.ip_address}")
+            print(f"  User: {alert.user}")
+            print(f"  Event Count: {alert.event_count}")
+            print()
     else:
         print("No alerts detected.")
 
