@@ -1,11 +1,10 @@
 # Python
 analyzer/.venv/
-analyzer/__pycache__/
-analyzer/*.pyc
+analyzer/**/__pycache__/
+analyzer/**/*.pyc
 
 # Java
 backend/target/
-backend/.mvn/wrapper/maven-wrapper.jar
 *.class
 
 # JavaScript
