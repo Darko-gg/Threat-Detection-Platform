@@ -53,12 +53,12 @@ function App() {
               marginBottom: "1rem"
             }}
           >
-            <p><strong>Type:</strong> {alert.alertType}</p>
+            <p><strong>Type:</strong> {alert.alert_type}</p>
             <p><strong>Severity:</strong> {alert.severity}</p>
             <p><strong>Message:</strong> {alert.message}</p>
-            <p><strong>IP Address:</strong> {alert.ipAddress}</p>
+            <p><strong>IP Address:</strong> {alert.ip_address}</p>
             <p><strong>User:</strong> {alert.user}</p>
-            <p><strong>Event Count:</strong> {alert.eventCount}</p>
+            <p><strong>Event Count:</strong> {alert.event_count}</p>
           </div>
         ))
       )}

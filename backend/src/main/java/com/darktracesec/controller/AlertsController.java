@@ -1,6 +1,7 @@
 package com.darktracesec.controller;
 
 import com.darktracesec.model.Alert;
+import com.darktracesec.service.AlertService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,25 +13,14 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:5173")
 public class AlertsController {
 
+    private final AlertService alertService;
+
+    public AlertsController(AlertService alertService) {
+        this.alertService = alertService;
+    }
+
     @GetMapping("/api/alerts")
     public List<Alert> getAlerts() {
-        return List.of(
-            new Alert(
-                "FAILED_LOGIN_THRESHOLD_EXCEEDED",
-                "high",
-                "Detected 3 failed logins from IP 185.22.44.9",
-                "185.22.44.9",
-                "bob",
-                3
-            ),
-            new Alert(
-                "FAILED_LOGIN_THRESHOLD_EXCEEDED",
-                "medium",
-                "Detected 2 failed logins from IP 201.55.77.101",
-                "201.55.77.101",
-                "dave",
-                2
-            )
-        );
+        return alertService.loadAlerts();
     }
 }
