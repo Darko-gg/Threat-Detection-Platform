@@ -1,8 +1,9 @@
-package com.darktracesec.service;
+package com.threatplatform.service;
 
-import com.darktracesec.model.Alert;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.threatplatform.model.Alert;
+
 import org.springframework.stereotype.Service;
 
 import java.io.File;

@@ -1,4 +1,4 @@
-package com.darktracesec;
+package com.threatplatform;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

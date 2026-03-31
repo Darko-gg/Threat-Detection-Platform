@@ -1,4 +1,4 @@
-package com.darktracesec.model;
+package com.threatplatform.model;
 
 public class Alert {
     private String alert_type;

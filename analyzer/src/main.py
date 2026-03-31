@@ -8,7 +8,7 @@ def main():
     file_path = "sample_logs/auth.log"
     output_path = "output/alerts.json"
 
-    print("DarktraceSec Analyzer started.")
+    print("ThreatDetectionPlatform started.")
     print(f"Loading log file: {file_path}")
 
     events = parse_log_file(file_path)

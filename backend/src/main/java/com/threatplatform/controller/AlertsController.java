@@ -1,10 +1,11 @@
-package com.darktracesec.controller;
+package com.threatplatform.controller;
 
-import com.darktracesec.model.Alert;
-import com.darktracesec.service.AlertService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.threatplatform.model.Alert;
+import com.threatplatform.service.AlertService;
 
 import java.util.List;
 
