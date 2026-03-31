@@ -1,6 +1,6 @@
-# DarktraceSec-FTD-Plat
+# Threat Detection Platform
 
-DarktraceSec-FTD-Plat is a full threat detection platform prototype built with Python, Java, and JavaScript. It analyzes log files, detects suspicious behavior, exposes alert data through a backend API, and displays alerts in a web dashboard.
+Threat Detectiuon Platform is a full threat detection platform prototype built with Python, Java, and JavaScript. It analyzes log files, detects suspicious behavior, exposes alert data through a backend API, and displays alerts in a web dashboard.
 
 ## Features
 
@@ -20,7 +20,7 @@ DarktraceSec-FTD-Plat is a full threat detection platform prototype built with P
 
 ## Project Structure
 
-    DarktraceSec-FTD-Plat/
+    Threat-Detection-Platform/
     ├── analyzer/   # Python log analyzer and detection engine
     ├── backend/    # Java Spring Boot API
     ├── dashboard/  # React frontend dashboard

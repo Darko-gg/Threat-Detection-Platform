@@ -67,7 +67,7 @@ function App() {
       }}
     >
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        DarktraceSec Threat Detection Platform
+        Threat Detection Platform
       </h1>
 
       <div

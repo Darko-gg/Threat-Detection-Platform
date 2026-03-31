@@ -1,4 +1,4 @@
-package com.darktracesec.controller;
+package com.threatplatform.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +14,7 @@ public class StatusController {
     public Map<String, String> getStatus() {
         return Map.of(
             "status", "online",
-            "service", "DarktraceSec Backend API",
+            "service", "ThreatDetectionPlatform Backend API",
             "message", "Backend is running successfully"
         );
     }
