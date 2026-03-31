@@ -67,7 +67,7 @@ function App() {
       }}
     >
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        Threat Detection Platform
+        Threat Detection Platform - Prototype
       </h1>
 
       <div
