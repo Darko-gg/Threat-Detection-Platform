@@ -8,11 +8,11 @@
         "event_count": 5
     },
     {
-        "alert_type": "FAILED_LOGIN_THRESHOLD_EXCEEDED",
-        "severity": "high",
-        "message": "Detected 6 failed logins from IP 201.55.77.101",
-        "ip_address": "201.55.77.101",
-        "user": "dave",
-        "event_count": 6
+        "alert_type": "SUSPICIOUS_IP_MULTI_USER_ACTIVITY",
+        "severity": "medium",
+        "message": "IP 185.22.44.9 interacted with multiple users: alice, bob, charlie",
+        "ip_address": "185.22.44.9",
+        "user": null,
+        "event_count": 3
     }
 ]

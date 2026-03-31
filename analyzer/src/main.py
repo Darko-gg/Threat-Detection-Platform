@@ -1,5 +1,6 @@
 from parsers.log_parser import parse_log_file
 from detectors.failed_login_detector import detect_failed_logins
+from detectors.suspicious_ip_detector import detect_suspicious_ip_activity
 from services.alert_exporter import export_alerts_to_json
 
 
@@ -11,7 +12,11 @@ def main():
     print(f"Loading log file: {file_path}")
 
     events = parse_log_file(file_path)
-    alerts = detect_failed_logins(events)
+
+    failed_login_alerts = detect_failed_logins(events)
+    suspicious_ip_alerts = detect_suspicious_ip_activity(events)
+
+    alerts = failed_login_alerts + suspicious_ip_alerts
 
     print(f"Parsed events: {len(events)}")
     print(f"Generated alerts: {len(alerts)}")
