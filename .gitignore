@@ -2,6 +2,7 @@
 analyzer/.venv/
 analyzer/**/__pycache__/
 analyzer/**/*.pyc
+analyzer/output/*.log
 
 # Java
 backend/target/
@@ -21,3 +22,10 @@ Thumbs.db
 # Environment files
 .env
 .env.*
+
+# Logs
+*.log
+
+# Optional local notes / temp files
+*.tmp
+*.bak
