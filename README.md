@@ -1,6 +1,6 @@
 # Threat Detection Platform
 
-Threat Detectiuon Platform is a full threat detection platform prototype built with Python, Java, and JavaScript. It analyzes log files, detects suspicious behavior, exposes alert data through a backend API, and displays alerts in a web dashboard.
+Threat Detection Platform is a full threat detection platform prototype built with Python, Java, and JavaScript. It analyzes log files, detects suspicious behavior, exposes alert data through a backend API, and displays alerts in a web dashboard.
 
 ## Features
 
