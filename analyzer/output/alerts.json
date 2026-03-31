@@ -4,13 +4,13 @@
         "severity": "high",
         "message": "Detected 5 failed logins from IP 185.22.44.9",
         "ip_address": "185.22.44.9",
-        "user": "bob",
+        "user": "operator02",
         "event_count": 5
     },
     {
         "alert_type": "SUSPICIOUS_IP_MULTI_USER_ACTIVITY",
         "severity": "medium",
-        "message": "IP 185.22.44.9 interacted with multiple users: alice, bob, charlie",
+        "message": "IP 185.22.44.9 interacted with multiple users: analyst01, auditor03, operator02",
         "ip_address": "185.22.44.9",
         "user": null,
         "event_count": 3
